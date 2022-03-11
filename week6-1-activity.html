@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+		<style type="text/css">
+			img{width: 300px; height: 200px;}
+			p#p1{color: darkcyan; font-size: 2em;}
+			img.i1{border: 3px solid; color: turquoise;}
+			input.q1{font-family: courier new; width: 200px; border: 1px solid; color: navy;}
+			input.q2{width: 200px; border: 1px solid; color: navy;}
+			h3#w1{font-family: courier new; border: 1px solid;}
+			li.l1{color: darkcyan}
+			li.l2{font-style: italic; color: darkcyan}
+		/*using id, element, class, multiple selector ONLY*/
+
+		</style>
+	
+</head>
+<body>
+<p id="p1">Here is my favorite pictures</p> <!-- 2em darkcyan -->
+
+<!-- all images 300x200 -->
+<img src="assets/images/th/t-1.jpg" alt="">
+<img src="assets/images/my/m-1.jpg" alt="" class="i1"> <!-- 3px solid turquoise -->
+<img src="assets/images/my/m-2.jpg" alt="" class="i1"> <!-- 3px solid turquoise -->
+<img src="assets/images/th/t-2.jpg" alt="">
+<p>Just a form</p>
+<form action="">
+	<input type="text"  placeholder="name" name="fullname" class="q1"> <!-- courier new, width 200px, border 1px solid, border color navy -->
+	<input type="text"  placeholder="fone" name="fone" class="q1"><!-- courier new, width 200px, border 1px solid, border color navy -->
+	<input type="email"  placeholder="email" name="email" class="q2"> <!-- width 200px border 1px solid, border color navy -->
+	<input type="number" name="captcha" placeholder="5x2" class="q2">  <!-- width 200px border 1px solid, border color navy -->
+	<input type="submit">
+</form>
+<h3 id="w1">here is list of my songs</h3> <!-- courier new border 1px solid -->
+<ol> 
+<!-- 	all list will be darkcyan -->
+	<li class="l1">Dimana janji mu dulu</li>
+	<li class="l2">Insan ku sayang menghilang</li> <!-- italic -->
+	<li class="l1">Resah kerinduan</li>
+	<li class="l2">Mengusung rindu</li> <!-- italic -->
+	<li class="l1">Malam semakin dingin</li>
+	<li class="l2">Haruskah kita berpisah</li><!-- italic -->
+	<li class="l1">Salah apa aku</li>
+	<li class="l2">Salam terakhir</li><!-- italic -->
+</ol>
+</body>
+</html>
