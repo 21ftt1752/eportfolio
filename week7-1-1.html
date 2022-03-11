@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 7-1</title>
+
+	<style type="text/css">
+		
+		div{display: flex; border: 1px solid; width: 800px;}
+		p{width:100px;height: 100px;
+			background-color: cyan;
+			border: 1px solid;
+			box-sizing: border-box;}
+
+			/*p:nth-child(1){flex-grow: 2;}
+			p:nth-child(2),
+
+			p:nth-child(4),{flex-grow: 1;}*/
+
+			/*p:nth-child(1),
+			p:nth-child(3),
+			p:nth-child(4){flex-grow: 1;} final width 100px
+
+			p:nth-child(2){flex-grow: 2;} /*final width 260px*/
+
+			/*grow calculation
+			parent width 800px
+			flex items: 100x4 = 400px
+
+			remaining space = 0px
+
+			flow grow factor
+			2
+			1
+			1
+			Total factor = 4
+
+			allocation
+			grow factor x available space
+			p:nth-child(1){flex-grow: 2;} 2/4 x 600px = 300px
+			p:nth-child(2), 1/4 x 400px = 200px
+			p:nth-child(4), {flex-grow: 1;} 1/4 x 200px = 100px
+
+			final width
+
+			p:nth-child(1){flex-grow: 2;} 2/4 x 300px = 200px + 100 = 300
+			p:nth-child(2), 1/4 x 300px = 100px +100 = 200
+			p:nth-child(2), 1/4 x 300px = 0px + 100 = 100
+			p:nth-child(4),{flex-grow: 1;} 1/4 x 200px = 100px + 100 = 200*/
+
+			div{width: 300px;}
+
+			/*flex grow factor
+			1
+			1
+			1
+			1
+			Total factor = 4
+
+			allocation
+			300-400 = -100
+			p:nth-child(1){flex-grow: 2;} 1/4 x -100px = -25px + 100 = 75
+			p:nth-child(2), 1/4 x -100px = -25px + 100 = 75
+			p:nth-child(2), 1/4 x -100px = -25px + 100 = 75
+			p:nth-child(4),{flex-grow: 1;} 1/4 x -100px = -25px + 100 = 75*/
+
+			shrink factor
+			p1 2
+			p2 0
+			p3 1
+			p4 2
+
+			allocation
+
+			p:nth-child(1) 2/5 x -100 = -40 + 100 = 60px
+			p:nth-child(2) 0/5 x -100 = 100px
+			p:nth-child(3) 1/5 x -100 = -20 + 100 = 80px
+			p:nth-child(4) 2/5 x -100 = -40 + 100 = 60px
+
+
+	</style>
+</head>
+<body>
+<div>
+	<p>1</p><p>2</p><p>3</p><p>4</p>
+</div>
+</body>
+</html>
