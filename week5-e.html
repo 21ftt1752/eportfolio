@@ -5,25 +5,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>week 5 eportfolio</title>
 	<style>
-		b{color: blue;}/*alum siap*/
-
+		
 		body{background-image: url(assets/images/id/i-1.jpg); /*Element 1*/
 			background-position: top center;
 			background-repeat: no-repeat;
 			background-attachment: fixed; /*stays in one place*/
 			} 
 
-			.rounded{width: 400px; /*class selector 2*/
+			img{width: 200px height: 150px;} /*element 2*/
+
+			#lorem{ /*id selector*/
+				height: 500px;
+				width: 75%;
+				border-top: 5px solid deepskyblue;
+				border-bottom: 5px solid deepskyblue;
+				border-right: 10px solid darkblue;
+				border-left: 10px solid darkblue;
+				font-size: 2em; /*2 x default(16px)*/
+				overflow: auto; /*scrolling*/
+				text-transform: uppercase; /*text becomes uppercase*/
+				text-align: justify;
+				margin: auto; /*div is centered*/
+				margin-top: 1.2em;
+				align-items: center;
+			}
+
+			#anotherlorem{ /*id selector*/
+				height: 200px;
+				width: 50%;
+				overflow: hidden; /*the overflow is hidden*/
+				line-height: 1.1em;
+				font-family: courier new;
+				text-transform: uppercase;
+				text-align: justify;
+				text-overflow: clip;
+				margin: auto; /*centered on page*/
+				margin-top: 1.2em;
+				border: 1px solid;
+			}
+
+			#thebold{color: red;font-size: 1.75em} /*purposely included*/
+
+			.rounded{width: 400px; /*class*/
 				border: 1px solid;
 				border-radius: 50px; /*curved*/
-				font-size: 16px;
+				font-size: 1em;
 				text-align: center;
 				display: inline-block;
 				flex-wrap: wrap;
 				position: relative;
+				justify-content: center;
 			}
 
-			.cn{padding-top: 80px; /*class 3*/
+			.cn{padding-top: 80px; /*class*/
 				padding-left: 30px;
 				padding-right: 30px;
 				font-family: courier new;
@@ -33,7 +67,15 @@
 				position: relative;
 			}
 
-			div:nth-child(1){ /*pseudo class4*/
+			p>span{ /*child selector*/
+				color: magenta;
+				text-transform: bold;
+				font-size: 1.35em;
+				text-shadow: 10px 5px 5px orange;
+				font-family: courier new;
+			}
+
+			div:nth-child(1){ /*pseudo class*/
 				padding-top: 20px;
 				padding-bottom: 20px;
 				padding-right: 30px;
@@ -45,81 +87,18 @@
 				padding-right: 30px;
 				padding-left: 30px;
 				border-color: black;
-				font-weight: bold;
-				color: skyblue;
+				font-style: bold;
+				color: deepskyblue;
 			}
-
-			#lorem{ /*id selector 6 , 7 , 8*/
-				height: 500px;
-				width: 75%;
-				border-top: 5px solid deepskyblue;
-				border-bottom: 5px solid deepskyblue;
-				border-right: 10px solid darkblue;
-				border-left: 10px solid darkblue;
-				font-size: 32px; /*2 x default(16px)*/
-				overflow: auto; /*scrolling*/
-				text-transform: uppercase; /*text becomes uppercase*/
-				text-align: justify;
-				margin: auto; /*div is centered*/
-				margin-top: 1.2em;
-			}
-
-			#anotherlorem{ /*id selector 6,7,8*/
-				height: 200px;
-				width: 50%;
-				overflow: hidden; /*the overflow is hidden*/
-				line-height: 1.1em;
-				font-family: courier new;
-				text-transform: uppercase;
-				text-align: justify;
-				margin: auto; /*centered on page*/
-				margin-top: 1.2em;
-				border: 1px solid;
-			}
-
-			img{width: 200px height: 150px;} /*element 9*/
 
 			img:nth-child(even){opacity: 30%;} /*transparency pseudo10*/
 
-			img[alt^="The best place"]:hover{border-radius: 50%;} /*element selector11*/
-
-			p>span{ /*child selector12*/
-				color: magenta;
-				font-weight: bold;
-				font-size: 21.6px;
-				text-shadow: 10px 5px 5px orange;
-				font-family: courier new;
-			}
-
-			#thebold{color: red; font-size: 1.75em;} 
-
-
-		/*ORGANIZE YOUR CSS IN THE FOLLOWING ORDER
-
-		1. ELEMENT SELECTOR
-		2. ID SELECTOR
-		3. CLASS SELECTOR
-		4. DESCENDENT SELECTOR
-		5. CHILD SELECTOR
-		6. SIBLING SELECTOR
-		7. ATTRIBUTE SELECTOR
-		8. PSEUDO CLASS SELECTOR
-
-		
-
-
-
-		
-		#thebold{color: red;font-size: 1.75em} /*purposely included*/
-
+			img[alt^="The best place"]:hover{border-radius: 50%;}
 
 	</style>
 </head>
 <body>
-	<!-- INSTRUCTIONS
-		YOU ARE NOT ALLOWED TO CHANGE ANY PART OF THE HTLM CODES (SUCH AS ADDING ID attributes or additional values to classes atributes.) 
-		YOU CAN CHANGE IMAGE SRC VALUES HOWEVER FOR IMAGES AT THE BOTTOM-->
-
+	
 <div class="rounded">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quidem, sit saepe consectetur nemo ullam nihil voluptates nostrum facere totam excepturi alias similique sint qui ad accusamus culpa quae suscipit.	Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Nobis ullam doloribus, minus nisi inventore, aliquid nesciunt temporibus libero id, dignissimos magni. Repellendus, beatae porro, eius dolorum explicabo possimus perferendis doloremque.	Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio voluptate, minus, placeat dolor quia nemo obcaecati aliquid maiores. Id, eum, in! Fugiat atque iusto quasi corrupti nulla, unde inventore.</div>
 <div class="rounded cn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quidem, sit saepe consectetur nemo ullam nihil voluptates nostrum facere totam excepturi alias similique sint qui ad accusamus culpa quae suscipit.	Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Nobis ullam doloribus, minus nisi inventore, aliquid nesciunt temporibus libero id, dignissimos magni. Repellendus, beatae porro, eius dolorum explicabo possimus perferendis doloremque.	Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio voluptate, minus, placeat dolor quia nemo obcaecati aliquid maiores. Id, eum, in! Fugiat atque iusto quasi corrupti nulla, unde inventore.</div>
 <div class="rounded"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quidem, sit saepe consectetur nemo ullam nihil voluptates nostrum facere totam excepturi alias similique sint qui ad accusamus culpa quae suscipit.	Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Nobis ullam doloribus, minus nisi inventore, aliquid nesciunt temporibus libero id, dignissimos magni. Repellendus, beatae porro, eius dolorum explicabo possimus perferendis doloremque.	Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio voluptate, minus, placeat dolor quia nemo obcaecati aliquid maiores. Id, eum, in! Fugiat atque iusto quasi corrupti nulla, unde inventore.</p></div>
