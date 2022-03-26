@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>week7-e2</title>
+	<style type="text/css">
+
+		form{display: flex;
+			/*flex-direction: column;*/
+			flex-wrap: wrap;
+			height: 100vh;
+			width: 600px;
+			margin: auto;}
+
+		/*form>div{padding: 10px;}*/
+
+		
+		.one{
+			width: 350px;
+			padding: 10px;
+			}
+
+
+		.two{
+			display: flex;
+			flex-grow: 1;
+			/*padding: 10px;*/
+			padding: 5px;
+			}
+
+
+		.third{flex-grow: 1;} /*without this, flex-grow on .sec will not be affective*/
+
+		.fourth{
+			flex: 600px;
+			text-align: center;
+			padding: 10px;
+			}
+
+
+
+	</style>
+</head>
+<body>
+	
+<form method="" action="">
+	
+	<div class="one"><label for="name">Fullname</label></div>
+	<div class="two"><input class="third" type="text" name="nama" id="nama" maxlength="30"></div>
+
+	
+	<div class="one"><label for="email">Email</label></div>
+	<div class="two"><input class="third" type="email" name="email" id="email"></div>
+	
+
+	<div class="one"><label for="date">Date you can start</label></div>
+	<div class="two"><input class="third" type="date" name="date" id="date"></div>
+	
+
+	<div class="one"><label for="time">Morning shift preference</label></div>
+	<div class="two"><input class="third" type="time" name="time" id="time"></div>
+	
+	
+	<div class="one"><label for="time">Night shift preference</label></div>
+	<div class="two"><input class="third" type="time" name="time" id="time"></div>
+	
+	
+	<div class="one"><label for="points">How many hours can you work? In multiple of 3</label></div>
+	<div class="two"><input class="third" type="number" name="points" id="points" step="3" min="3" max="9"></div>
+
+
+	<div class="one"><label>Distance you willing to commute to volunteer center?</label></div>
+	<div class="two"><label>1<input class="third" type="range" min="1" max="15" value="3" name="sld">15</label></div>
+	
+	
+	<div class="one"><label for="number"> Your currency preference for payment?</label></div>
+		<div class="two"><label>
+			<label for="pounds">&#163;</label><input class="third" type="radio" name="number" id="pound">
+			<label for="yen">&#165;</label><input class="third" type="radio" name="number" id="yen">
+			<label for="euro">&#128;</label><input class="third" type="radio" name="number" id="euro">
+		</label></div>
+	
+	
+
+	<div class="fourth"><textarea id="text" name="text" rows="6" cols="40" placeholder="Type your home adress" pattern="[.]" ></textarea></div>
+		
+	
+	<div class="fourth"><strike><strong>You will be given daily meals</strong></strike></div>
+	
+	
+	<div class="fourth"><strong><input  type="checkbox" value="rendered-checked" checked>I agree to all terms and conditions</strong></div>
+	
+	
+	<div class="fourth"><strong>Prove you are not robot: 10 &#60; 20<input type="checkbox" ></strong></div>
+	
+	
+	<div class="fourth"><strong><input type="submit" name="submit" value="Volunteer now!" ></strong></div>
+	
+	
+	<div class="fourth"><strong><input type="reset" name="reset" value="Start over" ></strong></div>
+	
+	
+	 <div class="fourth">For more information, visit MOH <a href="https://www.moh.gov.bn/Pages/Home.aspx" >website</a></div>
+	
+
+
+</form>
+
+
+
+</body>
+</html>
